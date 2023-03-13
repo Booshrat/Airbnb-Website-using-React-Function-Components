@@ -1,0 +1,92 @@
+/* Styles for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+/* Styles for the logo */
+.nav-logo {
+    height: 2rem;
+}
+
+/* Styles for serach bar section */
+.search {
+    border: 1px solid var(--grey);
+    border-radius: 2rem;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 2px 12px rgb(0 0 0 / 5%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.4rem 0.2rem 0.4rem 1.5rem;
+}
+.search:hover {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 13%), 0 2px 12px rgb(0 0 0 / 10%);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.search-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-right: 1px solid var(--grey);
+    padding-right: 0.5rem;
+}
+.search-text-guest {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-right: 0.5rem;
+    color: var(--dark-grey);
+}
+.search-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--red-theme);
+    border-radius: 50%;
+    color: var(--white);
+    padding: 0.25rem;
+}
+
+/* Styles for the profile section */
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.airbnb-your-home {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.airbnb-your-home:hover {
+    background-color: var(--light-grey);
+}
+.profile-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--dark-grey);
+    border: 1px solid var(--grey);
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.profile-menu:hover {
+    box-shadow: 0 1px 2px rgb(0 0 0 / 13%), 0 2px 12px rgb(0 0 0 / 10%);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.menu-item {
+    font-size: 0.9rem !important;
+    margin-top: 0.5rem !important;
+}

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import Filter from './Components/Filter/Filter';
+import Card from './Components/Card/Card';
+import list from '../src/Components/Card/cardItems';
+import Footer from './Components/Footer/Footer';
 
+// Create a function that maps through an array (list) to return information from it.
+function addItems(items) {
+  let myItems = items.map((item) => {
+    return (
+      <div>
+        <Card 
+          image={item.imgSrc} 
+          title={item.title} 
+          rating={item.rating} 
+          description={item.desc} 
+          date={item.date} 
+          price={item.price}
+        />
+      </div>
+    );
+  });
+  return myItems;
+}
+
+// Create a function component that returns all components.
 function App() {
+  let myItems = addItems(list);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Filter />
+      <div className='card-box'>{myItems}</div>
+      <Footer />
     </div>
   );
 }
 
+// Export the App component that will be imported and rendered in the index.js file.
 export default App;

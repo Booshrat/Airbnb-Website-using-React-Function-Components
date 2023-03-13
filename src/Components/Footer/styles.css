@@ -1,0 +1,13 @@
+/* Styles for the footer section*/
+.footer {
+    border: 1px solid var(--grey);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0.4rem 0.2rem 0.4rem 1.5rem;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--white);
+}
